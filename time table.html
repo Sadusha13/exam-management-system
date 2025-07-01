@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Subject - Exam Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="subject-container">
+        <h1>Welcome! Please Select Your Subject</h1>
+
+        <button onclick="selectSubject('Computer Science')">Computer Science</button>
+        <button onclick="selectSubject('Java Programming')">Java Programming</button>
+        <button onclick="selectSubject('HTML & Web Development')">HTML & Web Development</button>
+    </div>
+
+    <script>
+        function selectSubject(subject) {
+            // Save selected subject to session storage (optional - for later use if needed)
+            sessionStorage.setItem('selectedSubject', subject);
+            
+            // Redirect to Page 3 (Time Table)
+            window.location.href = 'timetable.html';
+        }
+    </script>
+</body>
+</html>
