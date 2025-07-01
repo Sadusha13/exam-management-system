@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container, .subject-container, .timetable-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #932222;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #97bf39;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #151d26;
+}
+
+.exam-timetable {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.exam-timetable th, .exam-timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.exam-timetable th {
+    background-color: #12181f;
+    color: white;
+}
